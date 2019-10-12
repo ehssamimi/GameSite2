@@ -1,0 +1,81 @@
+/*.App {*/
+  /*text-align: center;*/
+/*}*/
+
+/*.App-logo {*/
+  /*height: 40vmin;*/
+/*}*/
+
+/*.App-header {*/
+  /*background-color: #282c34;*/
+  /*min-height: 100vh;*/
+  /*display: flex;*/
+  /*flex-direction: column;*/
+  /*align-items: center;*/
+  /*justify-content: center;*/
+  /*font-size: calc(10px + 2vmin);*/
+  /*color: white;*/
+/*}*/
+
+/*.App-link {*/
+  /*color: #09d3ac;*/
+/*}*/
+.loading-overlay {
+  z-index: 1050;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.loading {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border: 2px solid rgba(146, 44, 136, 0.2);
+  border-radius: 50%;
+  border-top-color: #922C88;
+  animation: spin 1s ease-in-out infinite;
+  -webkit-animation: spin 1s ease-in-out infinite;
+  left: calc(50% - 15px);
+  top: calc(50% - 15px);
+  position: fixed;
+  z-index: 1;
+}
+.z-1{
+  z-index: 1
+}
+.z-2{
+  z-index: 2
+}
+.z-3{
+  z-index: 3
+}
+.z-4{
+  z-index: 4
+}
+.z-5{
+  z-index: 5
+}
+.z-6{
+  z-index: 6
+}
+
+.imgSelf{
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+/*.backSelf{*/
+  /*background: url("./../Common/img/Backgrounds/Backgrounds/1-bg.jpg") no-repeat center ;*/
+  /*background-size: cover;*/
+  /*width: 100%;*/
+  /*height: 100vh;*/
+  /*object-fit: fill;*/
+/*}*/
+.vh-100{
+  height: 100vh;
+}
