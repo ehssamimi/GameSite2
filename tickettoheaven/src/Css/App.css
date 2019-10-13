@@ -20,6 +20,26 @@
 /*.App-link {*/
   /*color: #09d3ac;*/
 /*}*/
+
+@font-face {
+  font-family: 'barbados';
+  src: url('./../Common/fonts/Barbaro-Roman/barbaro.ttf');
+  src:
+          local('barbados'),
+          local('barbados'),
+          url('./../Common/fonts/Barbaro-Roman/barbaro.ttf')
+          format('opentype');
+}
+body{
+  padding: 0!important;
+  margin: 0!important;
+  font-family: barbados!important;
+}
+html{
+  padding: 0!important;
+  margin: 0!important;
+  font-family: barbados!important;
+}
 .loading-overlay {
   z-index: 1050;
   position: fixed;
@@ -45,6 +65,9 @@
   position: fixed;
   z-index: 1;
 }
+.fontFamiliyBarbaDos{
+  font-family: barbados;
+}
 .z-1{
   z-index: 1
 }
@@ -63,11 +86,81 @@
 .z-6{
   z-index: 6
 }
+.firstHeader{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 15vh;
+}
 
 .imgSelf{
   width: 100%;
   height: 100%;
   object-fit: fill;
+}
+.imgSelf-cover{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+ }
+
+.divOver{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.divOverP3{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 15%;
+  left: 10%;
+  /*color: white!important;*/
+}
+.divOverP3-2{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 80%;
+  left: 10%;
+  /*color: white!important;*/
+}
+.firstTextOver{
+  /*width: 100%;*/
+  /*height: 100%;*/
+  position: absolute;
+  top: 10%;
+  /*left: 0;*/
+  font-size: 2.5vw;
+}
+.divOver30{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 15vh;
+  left: 0;
+}
+.divOver2{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 100vh;
+  left: 0;
+}
+.vh-10{
+  height: 10vh;
+}
+.vh-5{
+  height: 5vh;
+}
+.vh-7{
+  height: 7vh;
+}
+.pointer{
+  cursor: pointer;
 }
 /*.backSelf{*/
   /*background: url("./../Common/img/Backgrounds/Backgrounds/1-bg.jpg") no-repeat center ;*/
@@ -78,4 +171,105 @@
 /*}*/
 .vh-100{
   height: 100vh;
+}
+.vh-35{
+  height: 35vh;
+}
+.vh-30{
+  height: 30vh;
+}
+.vh-40{
+  height: 40vh;
+}
+.vh-45{
+  height: 45vh;
+}
+.vh-25{
+  height: 25vh;
+}
+.vh-20{
+  height: 20vh;
+}
+.vh-15{
+  height: 15vh;
+}
+
+.top0{
+  top: 0;
+}
+.box2{
+  position: absolute;
+  /*width: 70%;*/
+  top: 0;
+  bottom: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  /*left: 30%;*/
+  /*margin-left: auto;*/
+  /*margin-right: auto;*/
+  /*top: 0;*/
+  /*left: 0;*/
+  /*right: 0;*/
+
+}
+.bgGreen{
+  background: url("./../Common/img/2-assets/SVG/greentext_bg.svg") no-repeat center ;
+  background-size: cover;
+}
+
+/*@media only screen and (min-width: 576px) {*/
+  /*!* For mobile phones: *!*/
+  /*.bgGreen{*/
+    /*background: url("./../Common/img/2-assets/SVG/greentext_bg.svg") no-repeat center ;*/
+    /*background-size: cover;*/
+  /*}*/
+/*}*/
+/*@media only screen and (max-width: 576px) {*/
+  /*!* For mobile phones: *!*/
+  /*.bgGreen{*/
+    /*background: url("./../Common/img/2-assets/SVG/greentext_bg.svg") no-repeat center ;*/
+    /*background-size: contain;*/
+  /*}*/
+/*}*/
+
+.FontSize1vw{
+  font-size:1vw
+}
+.FontSize13vw{
+  font-size:1.3vw
+}
+.FontSize15vw{
+  font-size:1.5vw
+}
+.FontSize2vw{
+  font-size:2vw
+}
+.FontSize25vw{
+  font-size:2.5vw
+}
+.paddingZero{
+  padding: 0!important;
+}
+.colorGreen{
+  color: #5ecb80;
+}
+.thierdBox{
+  position: absolute;
+  width:40%;
+  top:12vh;
+  bottom: 0;
+  /*margin-top: auto;*/
+  /*margin-bottom: auto;*/
+  height: 45vh;
+  left: 45%;
+  /*background: #922C88;*/
+}
+
+.box4{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 15%;
+  left: 42%;
+  /*color: white!important;*/
 }
