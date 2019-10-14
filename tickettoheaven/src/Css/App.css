@@ -112,6 +112,14 @@ html{
   top: 0;
   left: 0;
 }
+.divOverP2{
+    width: 100%;
+    /*height: 100%;*/
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    /*color: white!important;*/
+}
 .divOverP3{
   width: 100%;
   height: 100%;
@@ -136,6 +144,7 @@ html{
     left: 10%;
     /*color: white!important;*/
 }
+
 .divOverP4-2{
     width: 100%;
     height: 100%;
@@ -254,6 +263,13 @@ html{
   /*left: 0;*/
   /*right: 0;*/
 
+}
+.box2-2{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    /*margin-top: auto;*/
+    margin-bottom: auto;
 }
 .bgGreen{
   background: url("./../Common/img/2-assets/SVG/greentext_bg.svg") no-repeat center ;
