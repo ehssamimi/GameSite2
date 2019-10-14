@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import background from "../../Common/img/Backgrounds/Backgrounds/2-bg.jpg";
 import kikStarter from "../../Common/img/2-assets/SVG/kikstarter_icon.svg";
 import greenBtn from "../../Common/img/2-assets/SVG/greenbtn_bg.svg";
-import greentxt from "../../Common/img/2-assets/SVG/greentext_bg.svg";
+// import greentxt from "../../Common/img/2-assets/SVG/greentext_bg.svg";
 import graybtn from "../../Common/img/2-assets/SVG/graybtn_bg.svg";
 // import kikStarter2 from "../../Common/img/2-assets/SVG/kikstarter_icon.svg";
 
@@ -11,7 +11,7 @@ class SecondPage extends Component {
         return (
             <div className='w-100 vh-45 position-relative  '>
                 <img src={background} alt={'firstPageBg'} className='imgSelf z-1'/>
-                <div className='w-100 box2 d-flex vh-30' >
+                <div className='w-100 box2 d-flex vh-30 ' >
                     <div className='col-2'>
                         <div className=' vh-10 d-flex justify-content-start '>
                             <img src={kikStarter} alt={'kikStarter'} className='imgSelf z-1 '/>

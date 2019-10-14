@@ -128,6 +128,38 @@ html{
   left: 10%;
   /*color: white!important;*/
 }
+.divOverP4{
+    width: 100%;
+    /*height: 100%;*/
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    /*color: white!important;*/
+}
+.divOverP4-2{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    color: white!important;
+}
+.divOverP6{
+    width: 100%;
+    /*height: 100%;*/
+    position: absolute;
+    top: 15%;
+    left: 13%;
+    /*color: white!important;*/
+}
+.divOverP10{
+    width: 100%;
+    /*height: 100%;*/
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    /*color: white!important;*/
+}
 .firstTextOver{
   /*width: 100%;*/
   /*height: 100%;*/
@@ -149,6 +181,14 @@ html{
   position: absolute;
   top: 100vh;
   left: 0;
+}
+.divOverP11-2{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 15%;
+    left: 20%;
+    color: white!important;
 }
 .vh-10{
   height: 10vh;
@@ -183,6 +223,9 @@ html{
 }
 .vh-45{
   height: 45vh;
+}
+.vh-50{
+    height: 50vh;
 }
 .vh-25{
   height: 25vh;
@@ -231,7 +274,9 @@ html{
     /*background-size: contain;*/
   /*}*/
 /*}*/
-
+.liNone{
+    list-style-type: none;
+}
 .FontSize1vw{
   font-size:1vw
 }
@@ -265,11 +310,76 @@ html{
   /*background: #922C88;*/
 }
 
-.box4{
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 15%;
-  left: 42%;
-  /*color: white!important;*/
+.box5{
+    position: absolute;
+    width:60%;
+    top:20%;
+    bottom: 0;
+    /*margin-top: auto;*/
+    /*margin-bottom: auto;*/
+    height: 45vh;
+    left: 35%;
+}
+.box7{
+    position: absolute;
+    width:60%;
+    top:15%;
+    bottom: 0;
+    /*margin-top: auto;*/
+    /*margin-bottom: auto;*/
+    height: 45vh;
+    left:1%;
+}
+.box8{
+    position: absolute;
+    top: 20%;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.box10{
+    position: absolute;
+    top: 10%;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    right: 8%;
+}
+.box11{
+    position: absolute;
+    width:50%;
+    top:20%;
+    bottom: 0;
+    /*margin-top: auto;*/
+    /*margin-bottom: auto;*/
+    height: 45vh;
+    left: 45%;
+}
+.overFlow-Hidden{
+    overflow: hidden;
+}
+.ml6{
+    margin-left: 3.5vw;
+}
+.ml7{
+    margin-left: 1.2vw;
+}
+.ml8{
+    margin-left: 1.5vw;
+}
+/*.ml9{*/
+    /*margin-left: 1.5vw;*/
+/*}*/
+.h80{
+    height: 0!important;
+}
+.imgSelf-cover80{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.buttonTab{
+    position: absolute;
+    bottom: 0;
+    left: 40%;
 }
