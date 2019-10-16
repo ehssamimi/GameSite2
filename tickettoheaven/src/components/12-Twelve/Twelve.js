@@ -1,20 +1,43 @@
 import React, {Component} from 'react';
 import background from "../../Common/img/Backgrounds/Backgrounds/12-bg.jpg";
-import box from "../../Common/img/4-assets/heal_box.png";
-import RedBox from "../../Common/img/4-assets/redtext_bg.svg";
+// import box from "../../Common/img/4-assets/heal_box.png";
+// import RedBox from "../../Common/img/4-assets/redtext_bg.svg";
 import twitter from "../../Common/img/1-assets/SVG/twitter_icon.svg";
 import facebook from "../../Common/img/1-assets/SVG/facebook_icon.svg";
 import instagram from "../../Common/img/1-assets/SVG/instagram_icon.svg";
 import Linked from "../../Common/img/12-footer-assets/linked in icon.svg";
 import youTube from "../../Common/img/12-footer-assets/youtube_icon.svg";
-import BTN from "../../Common/img/12-footer-assets/signupedittext_bg.svg";
-import skipp from "../../Common/img/12-footer-assets/sighnuppinkbtn_bg.svg";
-import handmade_logo from "../../Common/img/1-assets/SVG/handmade_logo.svg";
+import BTN from "../../Common/img/12-footer-assets2/12-footer-assets2/bottom_to_top.svg";
+// import skipp from "../../Common/img/12-footer-assets/sighnuppinkbtn_bg.svg";
+// import handmade_logo from "../../Common/img/1-assets/SVG/handmade_logo.svg";
+import {animateScroll as scroll, Events, Link} from "react-scroll/modules";
 
 class Twelve extends Component {
+    constructor(props) {
+        super(props);
+        this.scrollToTop = this.scrollToTop.bind(this);
+    }
+    componentDidMount() {
+
+        Events.scrollEvent.register('begin', function () {
+            console.log("begin", arguments);
+        });
+
+        Events.scrollEvent.register('end', function () {
+            console.log("end", arguments);
+        });
+
+    }
+    scrollToTop() {
+        scroll.scrollToTop();
+    }
+    componentWillUnmount() {
+        Events.scrollEvent.remove('begin');
+        Events.scrollEvent.remove('end');
+    }
     render() {
         return (
-            <div className='w-100 vh-45 position-relative  '>
+            <div className='w-100 vh-45 position-relative  ' id='twelve'>
                 <img src={background} alt={'firstPageBg'} className='imgSelf z-1'/>
 
 
@@ -53,7 +76,9 @@ class Twelve extends Component {
                         </div>
                         <div className='w-100 vh-7 text-white z-3   d-flex justify-content-end '>
                             <div className='col-2 ml-auto '>
+                                <Link name="first" activeClass="active" className="first" to="first" spy={true} smooth={true} duration={900}>
                                 <img src={BTN} alt={'BTN'} className='imgSelf z-1  pointer'/>
+                                </Link>
 
                             </div>
                             <div className='col-5 text-white d-flex '>

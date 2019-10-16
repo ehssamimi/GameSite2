@@ -69,7 +69,7 @@ const Nine = (props) => {
     });
 
     return (
-        <div className='w-100 h-50'>
+        <div className='w-100 h-50' id='nine'>
         <Carousel
             activeIndex={activeIndex}
             next={next}

@@ -12,24 +12,50 @@ import Nine from "../../9-Nineth/Nine";
 import Ten from "../../10-Tenth/Ten";
 import Eleven from "../../11-Eleventh/Eleven";
 import Twelve from "../../12-Twelve/Twelve";
+import PlayVideo from "../../PlayVideo/PlayVideo";
 
 class MainComponent extends Component {
+    constructor(props) {
+        super(props);
+        this.state={
+            playVideo:false
+        };
+    }
+    playVideo(state){
+        console.log('ckick on video');
+        this.setState({
+            playVideo:state
+        })
+    }
+
+
     render() {
         return (
             <div>
-                <FirstPage/>
-                <SecondPage/>
-                <TheirdPage/>
-                <Fourth/>
-                <Five/>
-                <Six/>
-                <Seven/>
-                <Eight/>
-                <Nine/>
+                {
+                    this.state.playVideo?
+                        <PlayVideo  playVideo={this.playVideo.bind(this)}/>
+                        :
+                        <div>
+                            <FirstPage playVideo={this.playVideo.bind(this)}/>
+                            <SecondPage/>
+                            <TheirdPage/>
+                            <Fourth/>
+                            <Five/>
+                            <Six/>
+                            <Seven/>
+                            <Eight/>
+                            <Nine/>
+                            <Ten/>
+                            <Eleven/>
+                            <Twelve/>
+                        </div>
+
+                }
+
+
                 {/*<Nine2/>*/}
-                <Ten/>
-                <Eleven/>
-                <Twelve/>
+
             </div>
         );
     }
