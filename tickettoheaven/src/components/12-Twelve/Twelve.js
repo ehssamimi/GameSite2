@@ -8,7 +8,7 @@ import instagram from "../../Common/img/1-assets/SVG/instagram_icon.svg";
 import Linked from "../../Common/img/12-footer-assets/linked in icon.svg";
 import youTube from "../../Common/img/12-footer-assets/youtube_icon.svg";
 import BTN from "../../Common/img/12-footer-assets2/12-footer-assets2/bottom_to_top.svg";
-// import skipp from "../../Common/img/12-footer-assets/sighnuppinkbtn_bg.svg";
+import input from "../../Common/img/12-footer-assets2/12-footer-assets2/email input.png";
 // import handmade_logo from "../../Common/img/1-assets/SVG/handmade_logo.svg";
 import {animateScroll as scroll, Events, Link} from "react-scroll/modules";
 
@@ -62,17 +62,20 @@ class Twelve extends Component {
                                 </div>
                             </div>
                             <div className='col-8 d-flex h-100'>
-                                <div className='w-100 h-100 justify-content-start' dir='ltr'>
+                                <div className='w-100 h-100 justify-content-center' dir='ltr'>
                                     <span className='FontSize25vw d-block'>DON'T MISS OUT!</span>
                                     <span className='FontSize2vw d-block'>FOLLOW US ON SOCIAL MEDIA AND KEEP UPDATE</span>
                                 </div>
                             </div>
                         </div>
-                        <div className='w-100 vh-7 text-white z-3   d-flex justify-content-center  '>
-                            STAY UPDATED WITH OUR WEEKLY NEWSLETTER
-                            {/*<div className=' paddingZero'>*/}
-                                {/*<img src={BTN} alt={'BTN'} className='imgSelf z-1  pointer'/>*/}
-                            {/*</div>*/}
+                        <div className='w-100 vh-10 text-white z-3   d-flex justify-content-center flex-column align-items-center  '>
+                            <div className='col-6   h-25 d-flex justify-content-center flex-column align-items-center '>
+                                STAY UPDATED WITH OUR WEEKLY NEWSLETTER
+
+                            </div>
+                            <div className='   col-3   h-75 d-flex justify-content-center flex-column align-items-center '>
+                                <img src={input} alt={'input'} className='imgSelf z-1  pointer'/>
+                            </div>
                         </div>
                         <div className='w-100 vh-7 text-white z-3   d-flex justify-content-end '>
                             <div className='col-2 ml-auto '>
@@ -100,8 +103,9 @@ class Twelve extends Component {
                             </div>
 
                         </div>
-                    </div>
 
+                    </div>
+                    <hr className='colorGreen z-6'/>
                     {/*<div className='text-white col-12'>*/}
                         {/*/!*aaaaa asfasgf aadgag*!/*/}
                     {/*</div>*/}

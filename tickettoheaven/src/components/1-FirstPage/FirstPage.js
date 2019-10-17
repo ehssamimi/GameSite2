@@ -7,6 +7,7 @@ import handmade_logo from "../../Common/img/1-assets/SVG/handmade_logo.svg";
 import textbox_bg from "../../Common/img/1-assets/SVG/textbox_bg.svg";
 import kikStarter from "../../Common/img/1-assets/SVG/kikstarter_icon.svg";
 import play_trailer_icon from "../../Common/img/1-assets/SVG/play_trailer_icon.svg";
+import TICKET from "../../Common/img/1-assets/SVG/TICKET TO HEAVEN.png";
 // import handmade_logo from "../../Common/img/1-assets/SVG/textbox_bg.svg";
 // import * as Scroll from 'react-scroll';
 import { Link, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
@@ -77,23 +78,23 @@ class FirstPage extends Component {
     render() {
         return (
             <div className='w-100 vh-100' id='first'>
-                <img src={background} alt={'firstPageBg'} className='imgSelf z-1'/>
+                {/*<img src={background} alt={'firstPageBg'} className='imgSelf z-1'/>*/}
                 <div className='' dir='rtl'>
                     <div className='z-2  divOver vh-10 d-flex align-items-end '>
 
                         <div className='col-2 d-flex   vh-3 '>
-                            <div className='   justify-content-start h-100 col-2 paddingZero'>
+                            <div className='   justify-content-start h-100 col-md-2 col-3 paddingZero'>
                                 <img src={twitter} alt={'twitter'} className='imgSelf z-1  pointer'/>
                             </div>
-                            <div className='   justify-content-start h-100 col-2 paddingZero'>
+                            <div className='   justify-content-start h-100 col-md-2 col-3 paddingZero'>
                                 <img src={facebook} alt={'facebook'} className='imgSelf z-1  pointer'/>
                             </div>
-                            <div className='   justify-content-start h-100 col-2 paddingZero'>
+                            <div className='   justify-content-start h-100 col-md-2 col-3 paddingZero'>
                                 <img src={instagram} alt={'instagram'} className='imgSelf z-1  pointer'/>
                             </div>
                         </div>
                         <div className='col-8 d-flex justify-content-center  vh-5 align-items-end'>
-                            <div className='col-4 d-flex align-items-end FontSize13vw justify-content-center'>
+                            <div className='col-md-4 col-6 d-flex align-items-end fontSizeHeader justify-content-center'>
                                 <div className='   justify-content-center h-100 col-4  pointer ml-4'>
                                     ContactUs
                                 </div>
@@ -109,18 +110,20 @@ class FirstPage extends Component {
                             </div>
 
                         </div>
-                        <div className='col-2 d-flex   vh-5   justify-content-center'>
-                            <div className='   justify-content-start h-100 col-1 paddingZero text-center  FontSize05vw ml-5'>
-                                <span>TICKET TO HEAVEN</span>
+                        <div className='col-2 d-flex   vh-7   justify-content-center'>
+                            <div className='   justify-content-start h-75 col-md-2 col-3 paddingZero  alineTicket  mt-2  ml-5'>
+                                <img src={TICKET} alt={'TICKET'} className='imgSelf  z-1  pointer d-flex '/>
                             </div>
-                            <div className='   justify-content-start h-100 col-3 paddingZero '>
+                            <div className='   justify-content-start h-100 col-md-3 col-4 paddingZero '>
                                 <img src={handmade_logo} alt={'handmade_logo'} className='imgSelf z-1  pointer'/>
                             </div>
                         </div>
                         <div className='text-center FontSize1vw'>
 
                         </div>
-{/*<div className='align-items-center'></div>*/}
+                        {/*<div className=''>*/}
+                            {/**/}
+                        {/*</div>*/}
 
                     </div>
                 </div>
@@ -154,23 +157,31 @@ gyroscope; picture-in-picture" allowFullScreen></iframe>
                                     </div>
                                 </div>
 
-                                <div className=' d-flex justify-content-center align-items-center vh-10  flex-column '>
-                                    <div className=' vh-10 d-flex justify-content-start align-items-center w-100 ' onClick={this.playVideo.bind(this)}>
-                                        <img src={play_trailer_icon} alt={'play_trailer_icon'} className='imgSelf z-1  col-1'/>
-                                        <span className='imgSelf z-1  FontSize1vw d-flex justify-content-start align-items-center'>
-                            watch a trailer
-                            </span>
-                                    </div>
-                                    <div className=' vh-10 d-flex justify-content-start align-items-center w-100'>
-                                        <img src={kikStarter} alt={'kikStarter'} className='imgSelf z-1 col-1'/>
-                                        <span className='imgSelf z-1   FontSize1vw d-flex justify-content-start align-items-center'>
-                            Back Us On KikStarter
-                            </span>
-                                    </div>
+                                <div className=' d-flex  align-items-center vh-10  flex-column ml10 '>
+                                    <div className=' h-100 d-flex justify-content-start align-items-center w-100 ' onClick={this.playVideo.bind(this)}>
+                                        <div className='col-2 h-100 paddingZero'>
+                                            <img src={play_trailer_icon} alt={'play_trailer_icon'} className='imgSelf z-1  '/>
 
+                                        </div>
+                                        <div className='col-10 h-100 paddingZero'>
+                                                   <span className='imgSelf z-1  FontSize1vw d-flex justify-content-start align-items-center'>
+                                                    watch a trailer
+                                                    </span>
+                                        </div>
+                                    </div>
+                                    <div className=' vh-10 d-flex justify-content-start align-items-center w-100 mt-2'>
+                                        <div className='col-2 h-100 paddingZero'>
+                                            <img src={kikStarter} alt={'kikStarter'} className='imgSelf z-1 '/>
+                                        </div>
+                                        <div className='col-10 h-100 paddingZero'>
+                                            <span className='imgSelf z-1   FontSize1vw d-flex justify-content-start align-items-center'>
+                                            Back Us On KikStarter
+                                             </span>
+                                        </div>
+
+                                    </div>
                                 </div>
                             </div>
-
 
                     }
 

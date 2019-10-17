@@ -13,6 +13,8 @@ import {
     CarouselIndicators,
     CarouselCaption
 } from 'reactstrap';
+import FirstPage from "../1-FirstPage/FirstPage";
+import Slider1 from "./Slider/Slider1";
 
 const items = [
     {
@@ -61,7 +63,8 @@ const Nine = (props) => {
                     onExited={() => setAnimating(false)}
                     key={item.src}
                 >
-                    <img src={item.src} alt={item.altText} className='imgSelf-cover'  />
+                    <Slider1/>
+                    {/*<img src={item.src} alt={item.altText} className='imgSelf-cover'  />*/}
                     <CarouselCaption captionText={item.caption} captionHeader={item.caption} />
                 </CarouselItem>
 

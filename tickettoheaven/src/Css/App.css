@@ -108,11 +108,18 @@ html{
   width: 100%;
   height: 15vh;
 }
-
+.alineTicket{
+ align-items: flex-end;
+}
 .imgSelf{
   width: 100%;
   height: 100%;
   object-fit: fill;
+}
+.imgSelf2{
+    width: 100%;
+    height: 120%;
+    object-fit: fill;
 }
 .imgSelf-cover{
    width: 100%;
@@ -283,8 +290,13 @@ border-radius: 20%;
     margin-bottom: auto;
 }
 .bgGreen{
-  background: url("./../Common/img/2-assets/SVG/greentext_bg.svg") no-repeat center ;
-  background-size: cover;
+    width: 100%;
+    height:50vh;
+    background-image: url('./../Common/img/2-assets/SVG/greentext_bg.svg');
+    background-size: 100% 100%;
+/*}*/
+  /*background: url("./../Common/img/2-assets/SVG/greentext_bg.svg") no-repeat center ;*/
+  /*background-size: cover;*/
 }
 
 
@@ -309,11 +321,7 @@ border-radius: 20%;
 .FontSize2vw{
   font-size:2vw
 }
-.axWidth{
-    -ms-flex: 0 0 12.666667%;
-    flex: 0 0 12.666667%;
-    max-width: 12.666667%;
-}
+
 .FontSize25vw{
   font-size:2.5vw
 }
@@ -322,6 +330,9 @@ border-radius: 20%;
 }
 .colorGreen{
   color: #5ecb80;
+}
+.h90{
+    height: 90%;
 }
 .thierdBox{
   position: absolute;
@@ -334,7 +345,16 @@ border-radius: 20%;
   left: 45%;
   /*background: #922C88;*/
 }
-
+.box2-3{
+    position: absolute;
+    width:60%;
+    top:2vh;
+    bottom: 0;
+    /*margin-top: auto;*/
+    /*margin-bottom: auto;*/
+    height: 45vh;
+    left: 30%;
+}
 
 .box7{
     position: absolute;
@@ -367,6 +387,9 @@ border-radius: 20%;
 .overFlow-Hidden{
     overflow: hidden;
 }
+.ml10{
+    margin-left: 10em;
+}
 .ml6{
     margin-left: 3.5vw;
 }
@@ -397,14 +420,21 @@ border-radius: 20%;
     left: 5%;
     z-index: 99999999999;
 }
-/*#first{*/
-    /*background: url("./../Common/img/Backgrounds/Backgrounds/1-bg.jpg") no-repeat center;*/
-    /*background-size: cover;*/
-    /*box-sizing: border-box;*/
-/*}*/
+.textconst{
+    width: 100%;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    font-size: 2vw;
+}
 
 @media only screen and (min-width: 760px) {
     /* For   tablet: */
+    .axWidth{
+        -ms-flex: 0 0 9.666667%;
+        flex: 0 0 9.666667%;
+        max-width: 9.666667%;
+    }
     .firstTextOver{
         /*width: 100%;*/
         /*height: 100%;*/
@@ -439,6 +469,23 @@ border-radius: 20%;
         font-size: 2vw;
         height: 45vh;
         left: 35%;
+    }
+    .slider1{
+        position: absolute;
+        width:100%;
+        top:5%;
+        bottom: 0;
+        font-size: 2vw;
+        height: 45vh;
+margin-left: auto;
+margin-right: auto;
+    }
+    .divOverSlider1{
+        width: 100%;
+        position: absolute;
+        top: 20%;
+        left: 12%;
+        font-size: 2vw;
     }
     .divOverP7{
         width: 100%;
@@ -508,10 +555,21 @@ border-radius: 20%;
         font-size: 2vw;
 
     }
+    .fontSizeHeader{
+        font-size: 1.3vw;
+    }
 
 }
 @media only screen and (max-width: 760px) {
     /* For mobile  : */
+    .axWidth{
+        -ms-flex: 0 0 17%;
+        flex: 0 0 17%;
+        max-width: 17%;
+    }
+    .fontSizeHeader{
+        font-size: 2vw;
+    }
     .firstTextOver{
         /*width: 100%;*/
         /*height: 100%;*/
@@ -529,11 +587,23 @@ border-radius: 20%;
         height: 45vh;
         left: 25%;
     }
+
+    .slider1 {
+        position: absolute;
+        width:100%;
+        top:5%;
+        bottom: 0;
+        font-size: 2vw;
+        height: 45vh;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     .divOverP4{
         width: 100%;
         position: absolute;
         top: 11%;
-        left: 15%;
+        left: 13%;
         font-size: 3vw;
     }
     .divOverP4-2{
@@ -614,7 +684,13 @@ border-radius: 20%;
 
 }
 
-
+#first{
+    width: 100%;
+    height: 100%;
+    background-image: url('./../Common/img/Backgrounds/Backgrounds/1-bg.jpg');
+    background-size: 100% 100%;
+    /*border: 1px solid red;*/
+}
 #second{
     width: 100%;
     height:50vh;
@@ -657,6 +733,12 @@ border-radius: 20%;
     width: 100%;
     height:50vh;
     background-image: url('./../Common/img/Backgrounds/Backgrounds/8-bg.jpg');
+    background-size: 100% 100%;
+}
+#slider1{
+    width: 100%;
+    height:50vh;
+    background-image: url('./../Common/img/Backgrounds/Backgrounds/9-bg.jpg');
     background-size: 100% 100%;
 }
 /*#eleven{*/

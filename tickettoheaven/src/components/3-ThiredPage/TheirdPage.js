@@ -30,7 +30,7 @@ class TheirdPage extends Component {
             <div className='w-100 vh-100 position-relative' id='third'>
                 {/*<img src={background} alt={'firstPageBg'} className='imgSelf z-1'/>*/}
                 <div className='thierdBox  d-flex justify-content-center flex-column'>
-                    <h3 className='pl-5 FontSize2vw'>I AM THE ONE WHO RUNS THE TOURNAMENT</h3>
+                    <h3 className='pl-md-5 pl-3 FontSize2vw'>I AM THE ONE WHO RUNS THE TOURNAMENT</h3>
                     <div className='  d-flex justify-content-start w-100 position-relative  '>
                         <img src={gray} alt={'kikStarter'} className='imgSelf-cover z-1 '/>
                                                    <pre className='fontFamiliyBarbaDos  divOverP3 FontSize2vw  text-white z-4 '>{`“THE FRIEND” IS YOUR TICKET TO HEAVEN,

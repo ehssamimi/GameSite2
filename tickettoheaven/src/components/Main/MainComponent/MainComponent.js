@@ -13,6 +13,7 @@ import Ten from "../../10-Tenth/Ten";
 import Eleven from "../../11-Eleventh/Eleven";
 import Twelve from "../../12-Twelve/Twelve";
 import PlayVideo from "../../PlayVideo/PlayVideo";
+import SecondPage2 from "../../2-SecondPage/SecondPage2";
 
 class MainComponent extends Component {
     constructor(props) {
@@ -38,7 +39,8 @@ class MainComponent extends Component {
                         :
                         <div>
                             <FirstPage playVideo={this.playVideo.bind(this)}/>
-                            <SecondPage/>
+                            {/*<SecondPage/>*/}
+                            <SecondPage2/>
                             <TheirdPage/>
                             <Fourth/>
                             <Five/>
