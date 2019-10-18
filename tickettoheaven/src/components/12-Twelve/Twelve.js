@@ -62,7 +62,7 @@ class Twelve extends Component {
                                 </div>
                             </div>
                             <div className='col-8 d-flex h-100'>
-                                <div className='w-100 h-100 justify-content-center' dir='ltr'>
+                                <div className='w-100 h-100 justify-content-center mt-3' dir='ltr'>
                                     <span className='FontSize25vw d-block'>DON'T MISS OUT!</span>
                                     <span className='FontSize2vw d-block'>FOLLOW US ON SOCIAL MEDIA AND KEEP UPDATE</span>
                                 </div>

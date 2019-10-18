@@ -1,11 +1,14 @@
 import React, {Component} from 'react';
 import {animateScroll as scroll, Events, Link} from "react-scroll/modules";
-import box from "../../Common/img/4-assets/heal_box.png";
+// import box from "../../Common/img/4-assets/heal_box.png";
 import RedBox from "../../Common/img/2-assets/SVG/greentext_bg.svg";
 import kikStarter from "../../Common/img/2-assets/SVG/kikstarter_icon.svg";
 import gameIcon from "../../Common/img/2-assets/SVG/game icon.png";
 import graybtn from "../../Common/img/2-assets/SVG/graybtn_bg.svg";
 import greenBtn from "../../Common/img/2-assets/SVG/greenbtn_bg.svg";
+// import { ParallaxProvider,Parallax  } from 'react-scroll-parallax';
+import { FaKickstarterK } from "react-icons/fa";
+
 
 class SecondPage2 extends Component {
     constructor(props) {
@@ -32,6 +35,7 @@ class SecondPage2 extends Component {
     }
     render() {
         return (
+
             <div className='w-100 vh-45 position-relative' id='second'>
                 {/*<img src={background} alt={'firstPageBg'} className='imgSelf z-1'/>*/}
 
@@ -71,15 +75,17 @@ PLUS IN-GAME ITEMS `}</pre>
                     <div className='  w-100 h-100'>
                         <span className='col-9 offset-1 pl-3  colorGreen FontSize25vw '>YOU DON'T WANT TO MISS THE FRIENDS STATUS</span>
 <div className='d-flex w-100 h-100'>
-    <div className='d-flex justify-content-start col-6 vh-7 '>
+    <div className='d-flex justify-content-start col-6 vh-7 pointer'>
         <img src={graybtn} alt={'graybtn'} className='imgSelf-cover z-1 pointer'/>
-        <pre className='fontFamiliyBarbaDos  divOverP2 FontSize2vw text-white z-2 '>{` BACK US ON KICKSTARTER!`}</pre>
+        <Link name="second" activeClass="active" className="second" to="third" spy={true} smooth={true} duration={500}>
+        <pre className='fontFamiliyBarbaDos  divOverP2  text-white z-2 '>{` LET'S MEET “THE FRIENDS”!`}</pre>
+        </Link>
     </div>
     <div className='  d-flex justify-content-start col-6 vh-7'>
         <img src={greenBtn} alt={'greenBtn'} className='imgSelf-cover z-1  pointer'/>
-        <Link name="second" activeClass="active" className="second" to="third" spy={true} smooth={true} duration={500}>
-            <pre className='fontFamiliyBarbaDos  divOverP2 FontSize2vw text-white z-2 '>{` LET'S MEET THE FRIENDS!`}</pre>
-        </Link>
+
+            <pre className='fontFamiliyBarbaDos  divOverP2  text-white z-2 '><FaKickstarterK className="mb-2 mr-2" />{` BACK US ON KICKSTARTER!`}</pre>
+
     </div>
 </div>
 
@@ -88,6 +94,7 @@ PLUS IN-GAME ITEMS `}</pre>
                 </div>
 
             </div>
+
 
         );
     }

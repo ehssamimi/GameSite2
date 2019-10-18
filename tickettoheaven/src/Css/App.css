@@ -137,9 +137,11 @@ html{
 .divOverP2{
     width: 100%;
     /*height: 100%;*/
+    font-size: 1.5vw;
     position: absolute;
-    top: 10%;
+    top: 15%;
     left: 20%;
+
     /*color: white!important;*/
 }
 .divOverP3{

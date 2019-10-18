@@ -3,6 +3,7 @@ import background from "../../Common/img/Backgrounds/Backgrounds/5-bg.jpg";
 import gray from "../../Common/img/5-assets/graytext_bg.svg";
 import RedBox from "../../Common/img/5-assets/redbtn_bg.svg";
 import {animateScroll as scroll, Events, Link} from "react-scroll/modules";
+import {Parallax, ParallaxProvider} from "react-scroll-parallax";
 
 class Five extends Component {
     constructor(props) {
@@ -29,6 +30,7 @@ class Five extends Component {
     }
     render() {
         return (
+
             <div className='w-100 vh-100 position-relative z-1' id='fifth'>
                 {/*<img src={background} alt={'firstPageBg'} className='imgSelf z-1'/>*/}
 
@@ -53,6 +55,8 @@ OPEN FOR FELLOW COMPETITORS`}</pre>
                     </div>
                 </div>
             </div>
+            //     </Parallax>
+            // </ParallaxProvider>
         );
     }
 }

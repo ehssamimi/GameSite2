@@ -3,6 +3,7 @@ import background from "../../Common/img/Backgrounds/Backgrounds/3-bg.jpg";
 import gray from "../../Common/img/3-assets/SVG/graytext_bg.svg";
 import black from "../../Common/img/3-assets/SVG/blackbtn_bg.svg";
 import {animateScroll as scroll, Events, Link} from "react-scroll/modules";
+import {Parallax, ParallaxProvider} from "react-scroll-parallax";
 
 
 class TheirdPage extends Component {
@@ -27,6 +28,7 @@ class TheirdPage extends Component {
     }
     render() {
         return (
+
             <div className='w-100 vh-100 position-relative' id='third'>
                 {/*<img src={background} alt={'firstPageBg'} className='imgSelf z-1'/>*/}
                 <div className='thierdBox  d-flex justify-content-center flex-column'>
@@ -51,6 +53,8 @@ class TheirdPage extends Component {
 {/*<div className='position-relative'></div>*/}
 
             </div>
+            //     </Parallax>
+            // </ParallaxProvider>
         );
     }
 }

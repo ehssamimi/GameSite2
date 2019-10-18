@@ -3,6 +3,7 @@ import background from "../../Common/img/Backgrounds/Backgrounds/11-bg.jpg";
 import gray from "../../Common/img/11-assets/textboxgray_bg.svg";
 import bluebox from "../../Common/img/11-assets/darkbluebtn_bg.svg";
 import greenbox from "../../Common/img/11-assets/greenishbluebtn_bg.svg";
+import { FaKickstarterK } from "react-icons/fa";
 
 class Eleven extends Component {
     render() {
@@ -29,6 +30,7 @@ PREPARE YOUR SELF TO WIN THE TICKET TO HEAVEN!`}</pre>
                     <div className='  h-35 col-7 ml8 mt-2'>
                         <img src={greenbox} alt={'greenbox'} className='imgSelf  z-1  pointer'/>
                         <span className='divOverP11-2  z-2  text-white'>
+                            <FaKickstarterK className="mb-2 mr-2" />
                             BACK US ON KICKSTARTER
                         </span>
                     </div>

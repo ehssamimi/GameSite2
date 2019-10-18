@@ -64,6 +64,7 @@ const Nine = (props) => {
                     key={item.src}
                 >
                     <Slider1/>
+                    <div className='carousel-control-next-icon'>a</div>
                     {/*<img src={item.src} alt={item.altText} className='imgSelf-cover'  />*/}
                     <CarouselCaption captionText={item.caption} captionHeader={item.caption} />
                 </CarouselItem>

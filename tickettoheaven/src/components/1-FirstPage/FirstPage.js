@@ -11,6 +11,7 @@ import TICKET from "../../Common/img/1-assets/SVG/TICKET TO HEAVEN.png";
 // import handmade_logo from "../../Common/img/1-assets/SVG/textbox_bg.svg";
 // import * as Scroll from 'react-scroll';
 import { Link, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+import {Parallax, ParallaxProvider} from "react-scroll-parallax";
 
 class FirstPage extends Component {
     constructor(props) {
@@ -77,6 +78,8 @@ class FirstPage extends Component {
     }
     render() {
         return (
+            <ParallaxProvider>
+                <Parallax className="custom-class" y={[-20, 20]} tagOuter="figure">
             <div className='w-100 vh-100' id='first'>
                 {/*<img src={background} alt={'firstPageBg'} className='imgSelf z-1'/>*/}
                 <div className='' dir='rtl'>
@@ -195,6 +198,8 @@ gyroscope; picture-in-picture" allowFullScreen></iframe>
 
 
             </div>
+                </Parallax>
+            </ParallaxProvider>
 
         );
     }
