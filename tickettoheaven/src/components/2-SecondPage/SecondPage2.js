@@ -36,7 +36,7 @@ class SecondPage2 extends Component {
     render() {
         return (
 
-            <div className='w-100 vh-45 position-relative' id='second'>
+            <section className='w-100 vh-45 position-relative' id='second'>
                 {/*<img src={background} alt={'firstPageBg'} className='imgSelf z-1'/>*/}
 
 
@@ -78,13 +78,15 @@ PLUS IN-GAME ITEMS `}</pre>
     <div className='d-flex justify-content-start col-6 vh-7 pointer'>
         <img src={graybtn} alt={'graybtn'} className='imgSelf-cover z-1 pointer'/>
         <Link name="second" activeClass="active" className="second" to="third" spy={true} smooth={true} duration={500}>
-        <pre className='fontFamiliyBarbaDos  divOverP2  text-white z-2 '>{` LET'S MEET “THE FRIENDS”!`}</pre>
+        {/*<pre className='fontFamiliyBarbaDos  divOverP2  text-white z-2 '>{` LET'S MEET “THE FRIENDS”!`}</pre>*/}
+            <h3 className='fontFamiliyBarbaDos  divOverP2  text-white z-2 '>{` LET'S MEET “THE FRIENDS”!`}</h3>
         </Link>
     </div>
     <div className='  d-flex justify-content-start col-6 vh-7'>
         <img src={greenBtn} alt={'greenBtn'} className='imgSelf-cover z-1  pointer'/>
 
-            <pre className='fontFamiliyBarbaDos  divOverP2  text-white z-2 '><FaKickstarterK className="mb-2 mr-2" />{` BACK US ON KICKSTARTER!`}</pre>
+            {/*<pre className='fontFamiliyBarbaDos  divOverP2  text-white z-2 '><FaKickstarterK className="mb-2 mr-2" />{` BACK US ON KICKSTARTER!`}</pre>*/}
+        <h3 className='fontFamiliyBarbaDos  divOverP2  text-white z-2 '><FaKickstarterK className="mb-2 mr-2" />{` BACK US ON KICKSTARTER!`}</h3>
 
     </div>
 </div>
@@ -93,7 +95,7 @@ PLUS IN-GAME ITEMS `}</pre>
                     </div>
                 </div>
 
-            </div>
+            </section>
 
 
         );

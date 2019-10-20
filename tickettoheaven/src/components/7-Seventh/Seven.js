@@ -3,11 +3,14 @@ import background from "../../Common/img/Backgrounds/Backgrounds/7-bg.jpg";
 import gray from "../../Common/img/7-assets/grey50textbox_bg.svg";
 import RedBox from "../../Common/img/7-assets/greenishgreybtn_bg.svg";
 import {Link} from "react-scroll/modules";
+import {Parallax, ParallaxProvider} from "react-scroll-parallax";
 
 class Seven extends Component {
     render() {
         return (
-            <div className='w-100 vh-100 position-relative  ' id='seventh'>
+            <ParallaxProvider>
+                <Parallax className="custom-class" y={[-15, 15]} tagOuter="figure">
+            <section className='w-100 vh-100 position-relative  ' id='seventh'>
                 {/*<img src={background} alt={'firstPageBg'} className='imgSelf z-1'/>*/}
 
 
@@ -24,9 +27,12 @@ HEAD TO ARENA!`}</pre>
                         <img src={RedBox} alt={'RedBox'} className='imgSelf  z-1  pointer'/>
                         <Link name="seven7" activeClass="seven7" className="seven7" to="nine" spy={true} smooth={true}
                               duration={500}>
-                                <span className='divOverP7-2  z-2  text-white'>
+                                {/*<span className='divOverP7-2  z-2  text-white'>*/}
+                            {/*lET'S FLY BATTLEFIELD!*/}
+                        {/*</span>*/}
+                            <h3 className='divOverP7-2  z-2  text-white pointer'>
                             lET'S FLY BATTLEFIELD!
-                        </span>
+                        </h3>
                         </Link>
 
                         {/*<pre className='fontFamiliyBarbaDos  divOverP4 FontSize2vw text-white z-4 '>*/}
@@ -36,7 +42,9 @@ HEAD TO ARENA!`}</pre>
 
                     </div>
                 </div>
-            </div>
+            </section>
+                </Parallax>
+            </ParallaxProvider>
         );
     }
 }

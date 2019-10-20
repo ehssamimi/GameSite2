@@ -8,7 +8,7 @@ import { FaKickstarterK } from "react-icons/fa";
 class Eleven extends Component {
     render() {
         return (
-            <div className='w-100 h-100 position-relative  ' id='eleven'>
+            <section className='w-100 h-100 position-relative  ' id='eleven'>
                 <img src={background} alt={'firstPageBg'} className='imgSelf-cover z-1'/>
 
 
@@ -23,20 +23,27 @@ PREPARE YOUR SELF TO WIN THE TICKET TO HEAVEN!`}</pre>
                     </div>
                     <div className='  h-35 col-7 ml8'>
                         <img src={bluebox} alt={'bluebox'} className='imgSelf  z-1  pointer'/>
-                        <span className='divOverP11-2-1  z-2 FontSize2vw text-white'>
+                        {/*<span className='divOverP11-2-1  z-2 FontSize2vw text-white'>*/}
+                           {/*COMING SOON...*/}
+                        {/*</span>*/}
+                        <h3 className='divOverP11-2-1  z-2 FontSize2vw text-white'>
                            COMING SOON...
-                        </span>
+                        </h3>
                     </div>
                     <div className='  h-35 col-7 ml8 mt-2'>
                         <img src={greenbox} alt={'greenbox'} className='imgSelf  z-1  pointer'/>
-                        <span className='divOverP11-2  z-2  text-white'>
+                        {/*<span className='divOverP11-2  z-2  text-white'>*/}
+                            {/*<FaKickstarterK className="mb-2 mr-2" />*/}
+                            {/*BACK US ON KICKSTARTER*/}
+                        {/*</span>*/}
+                        <h3 className='divOverP11-2  z-2  text-white'>
                             <FaKickstarterK className="mb-2 mr-2" />
                             BACK US ON KICKSTARTER
-                        </span>
+                        </h3>
                     </div>
                 </div>
-                <span className='buttonTab text-white FontSize13vw'>BACK US KICKSTARTER AND EARN EXCLUSIVE IN GAME AND PHYSICAL REWARDS!</span>
-            </div>
+                <span className='buttonTab pb-1 text-white FontSize13vw'>BACK US KICKSTARTER AND EARN EXCLUSIVE IN GAME AND PHYSICAL REWARDS!</span>
+            </section>
         );
     }
 }

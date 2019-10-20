@@ -15,6 +15,7 @@ import {
 } from 'reactstrap';
 import FirstPage from "../1-FirstPage/FirstPage";
 import Slider1 from "./Slider/Slider1";
+import {Parallax, ParallaxProvider} from "react-scroll-parallax";
 
 const items = [
     {
@@ -73,6 +74,7 @@ const Nine = (props) => {
     });
 
     return (
+
         <div className='w-100 h-50' id='nine'>
         <Carousel
             activeIndex={activeIndex}
@@ -89,6 +91,7 @@ const Nine = (props) => {
             <CarouselControl direction="next" directionText="Next" onClickHandler={next} />
         </Carousel>
         </div>
+
     );
 };
 

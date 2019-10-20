@@ -29,7 +29,7 @@ class Six extends Component { constructor(props) {
 
     render() {
         return (
-            <div className='w-100 vh-45 position-relative  ' id='sixth'>
+            <section className='w-100 vh-45 position-relative  ' id='sixth'>
                 {/*<img src={background} alt={'firstPageBg'} className='imgSelf z-1'/>*/}
 
 
@@ -51,7 +51,7 @@ class Six extends Component { constructor(props) {
                     </div>
                 </div>
 
-            </div>
+            </section>
         );
     }
 }

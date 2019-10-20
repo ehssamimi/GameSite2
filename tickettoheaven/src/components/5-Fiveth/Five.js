@@ -30,8 +30,10 @@ class Five extends Component {
     }
     render() {
         return (
+            <ParallaxProvider>
+                <Parallax className="custom-class" y={[-15, 15]} tagOuter="figure">
 
-            <div className='w-100 vh-100 position-relative z-1' id='fifth'>
+            <section className='w-100 vh-100 position-relative z-1' id='fifth'>
                 {/*<img src={background} alt={'firstPageBg'} className='imgSelf z-1'/>*/}
 
 
@@ -46,7 +48,9 @@ OPEN FOR FELLOW COMPETITORS`}</pre>
                     <div className='  h-35  col-6 ml6 pointer'>
                         <img src={RedBox} alt={'RedBox'} className='imgSelf  z-1  pointer'/>
                         <Link name="five5" activeClass="five5" className="five5" to="seventh" spy={true} smooth={true} duration={500}>
-                             <span className='divOverP4-2   z-2  text-white textRotationHeader1'>IM READY FOR THE BETTER LIFE!</span> </Link>
+                            {/*<h3> <span className='divOverP4-2   z-2  text-white textRotationHeader1'>IM READY FOR THE BETTER LIFE!</span></h3>*/}
+                            <h3 className='divOverP4-2   z-2  text-white textRotationHeader1'>IM READY FOR THE BETTER LIFE!</h3>
+                             </Link>
                         {/*<pre className='fontFamiliyBarbaDos  divOverP4 FontSize2vw text-white z-4 '>*/}
                             {/*{`      KEEP YOUR EYE ON HEALTH BOXES*/}
     {/*EVEN THE MIGHIEST WARRIORS NEED*/}
@@ -54,9 +58,9 @@ OPEN FOR FELLOW COMPETITORS`}</pre>
 
                     </div>
                 </div>
-            </div>
-            //     </Parallax>
-            // </ParallaxProvider>
+            </section>
+               </Parallax>
+           </ParallaxProvider>
         );
     }
 }

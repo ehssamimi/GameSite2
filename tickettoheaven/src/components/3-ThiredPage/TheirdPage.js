@@ -28,8 +28,9 @@ class TheirdPage extends Component {
     }
     render() {
         return (
-
-            <div className='w-100 vh-100 position-relative' id='third'>
+            <ParallaxProvider>
+                <Parallax className="custom-class" y={[-15, 15]} tagOuter="figure">
+            <section className='w-100 vh-100 position-relative' id='third'>
                 {/*<img src={background} alt={'firstPageBg'} className='imgSelf z-1'/>*/}
                 <div className='thierdBox  d-flex justify-content-center flex-column'>
                     <h3 className='pl-md-5 pl-3 FontSize2vw'>I AM THE ONE WHO RUNS THE TOURNAMENT</h3>
@@ -44,7 +45,8 @@ class TheirdPage extends Component {
                         <Link name="third" activeClass="third" className="third w-100 h-100" to="fifth" spy={true} smooth={true} duration={500}>
 
                         <img src={black} alt={'black'} className='imgSelf-cover z-1  '/>
-                            <pre className='fontFamiliyBarbaDos  divOverP3-2 FontSize2vw text-white z-4 textRotationHeader '>{`TAKE ME TO BAR FRIEND `}</pre>
+                            {/*<pre className='fontFamiliyBarbaDos  divOverP3-2 FontSize2vw text-white z-4 textRotationHeader '>{`TAKE ME TO BAR FRIEND `}</pre>*/}
+                            <h2 className='fontFamiliyBarbaDos  divOverP3-2 FontSize2vw text-white z-4 textRotationHeader '>{`TAKE ME TO BAR FRIEND `}</h2>
                         </Link>
 
                     </div>
@@ -52,9 +54,9 @@ class TheirdPage extends Component {
 
 {/*<div className='position-relative'></div>*/}
 
-            </div>
-            //     </Parallax>
-            // </ParallaxProvider>
+            </section>
+           </Parallax>
+            </ParallaxProvider>
         );
     }
 }

@@ -29,7 +29,7 @@ class Eight extends Component {
     }
     render() {
         return (
-            <div className='w-100 vh-45 position-relative  ' id='eight'>
+            <section className='w-100 vh-45 position-relative  ' id='eight'>
                 {/*<img src={background} alt={'firstPageBg'} className='imgSelf-cover z-1'/>*/}
                 <div className='w-100 h-100  d-flex justify-content-center align-items-center box8 flex-column'>
                     {/*<div className='     col-1 '>*/}
@@ -43,7 +43,7 @@ class Eight extends Component {
    THEM UP BEFORE YOUR OPPONENT DO!`}</pre>
                     </div>
                 </div>
-            </div>
+            </section>
         );
     }
 }

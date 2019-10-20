@@ -6,7 +6,7 @@ import ITEM from "../../Common/img/10-assets/item.png";
 class Ten extends Component {
     render() {
         return (
-            <div className='w-100 vh-45 position-relative  ' id='ten'>
+            <section className='w-100 vh-45 position-relative  ' id='ten'>
                 <img src={background} alt={'firstPageBg'} className='imgSelf z-1'/>
                 <div className='w-100 h-100  d-flex justify-content-center align-items-center box10 mr-5'>
                     <div className='     col-3 col-md-2  vh-35 '>
@@ -19,7 +19,7 @@ class Ten extends Component {
 SOMETIMES A BASEBALL BAT IS ENOUGH!`}</pre>
                     </div>
                 </div>
-            </div>
+            </section>
         );
     }
 }

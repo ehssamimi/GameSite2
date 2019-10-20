@@ -300,10 +300,22 @@ border-radius: 20%;
   /*background: url("./../Common/img/2-assets/SVG/greentext_bg.svg") no-repeat center ;*/
   /*background-size: cover;*/
 }
+.alink{
+    color: black;
+    text-decoration: none;
 
-
+}
+.alink:hover{
+    padding-bottom: 3px;
+    color: black;
+    text-decoration: none;
+    border-bottom:2px solid black ;
+    transition: 0.2s;
+    /*font-weight: 600;*/
+}
 .liNone{
     list-style-type: none;
+    font-size: 1vw;
 }
 .FontSize1vw{
   font-size:1vw
@@ -407,6 +419,18 @@ border-radius: 20%;
 /*.ml9{*/
     /*margin-left: 1.5vw;*/
 /*}*/
+.hrTag{
+    color: white;
+    z-index: 999;
+    height: 2vh;
+    font-weight: bolder;
+}
+h1 , h3
+{
+    line-height: 1.5 !important;
+}
+
+
 .h80{
     height: 0!important;
 }
@@ -446,6 +470,16 @@ border-radius: 20%;
         /*left: 0;*/
         font-size: 2.8vw;
     }
+    /*h1{*/
+        /*!*width: 100%;*!*/
+        /*!*height: 100%;*!*/
+        /*position: absolute;*/
+        /*top: 12%;*/
+        /*text-align: center;*/
+        /*!*left: 0;*!*/
+        /*font-size: 2.8vw;*/
+        /*cursor: pointer;*/
+    /*}*/
     .divOverP4{
         width: 100%;
         position: absolute;
@@ -463,6 +497,7 @@ border-radius: 20%;
         font-size: 1.8vw;
 
     }
+
     .box5{
         position: absolute;
         width:60%;
@@ -635,13 +670,20 @@ margin-right: auto;
         /*text-align: center;*/
 
     }
+    .divOverSlider1{
+        width: 100%;
+        position: absolute;
+        top: 25%;
+        left: 15%;
+        font-size: 2.3vw;
+    }
     .box10{
         position: absolute;
-        top: 10%;
+        top: 15%;
         bottom: 0;
         margin-top: auto;
         margin-bottom: auto;
-        right:1%;
+        right:10%;
     }
     .textSplit{
         width: 100%;
@@ -691,13 +733,14 @@ margin-right: auto;
     height: 100%;
     background-image: url('./../Common/img/Backgrounds/Backgrounds/1-bg.jpg');
     background-size: 100% 100%;
-    /*border: 1px solid red;*/
+
 }
 #second{
     width: 100%;
     height:50vh;
     background-image: url('./../Common/img/Backgrounds/Backgrounds/2.jpg');
     background-size: 100% 100%;
+    z-index: 999999!important;
 }
 
 #third{
@@ -712,6 +755,7 @@ margin-right: auto;
     height:50vh;
     background-image: url('./../Common/img/Backgrounds/Backgrounds/4-bg.jpg');
     background-size: 100% 100%;
+    z-index: 999999!important;
 }
 #fifth{
     width: 100%;
@@ -724,6 +768,8 @@ margin-right: auto;
     height:50vh;
     background-image: url('./../Common/img/Backgrounds/Backgrounds/6-bg.jpg');
     background-size: 100% 100%;
+    z-index: 999999!important;
+
 }
 #seventh{
     width: 100%;
@@ -736,6 +782,8 @@ margin-right: auto;
     height:50vh;
     background-image: url('./../Common/img/Backgrounds/Backgrounds/8-bg.jpg');
     background-size: 100% 100%;
+    /*z-index: 999999!important;*/
+
 }
 #slider1{
     width: 100%;

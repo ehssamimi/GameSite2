@@ -80,55 +80,54 @@ class FirstPage extends Component {
         return (
             <ParallaxProvider>
                 <Parallax className="custom-class" y={[-20, 20]} tagOuter="figure">
-            <div className='w-100 vh-100' id='first'>
+            <section className='w-100 vh-100' id='first'>
                 {/*<img src={background} alt={'firstPageBg'} className='imgSelf z-1'/>*/}
                 <div className='' dir='rtl'>
-                    <div className='z-2  divOver vh-10 d-flex align-items-end '>
+                    <header className='z-2  divOver vh-10 d-flex align-items-center pt-2 '>
 
-                        <div className='col-2 d-flex   vh-3 '>
-                            <div className='   justify-content-start h-100 col-md-2 col-3 paddingZero'>
-                                <img src={twitter} alt={'twitter'} className='imgSelf z-1  pointer'/>
+                        <div className='col-2 d-flex  vh-3 '>
+                            <div className='     h-100 col-md-2 col-3 paddingZero   '>
+                                <a href="#" ><img src={twitter} alt={'twitter'} className='imgSelf z-1  pointer'/></a>
+
                             </div>
-                            <div className='   justify-content-start h-100 col-md-2 col-3 paddingZero'>
-                                <img src={facebook} alt={'facebook'} className='imgSelf z-1  pointer'/>
+                            <div className='     h-100 col-md-2 col-3 paddingZero'>
+                                <a href="#"><img src={facebook} alt={'facebook'} className='imgSelf z-1  pointer'/></a>
                             </div>
-                            <div className='   justify-content-start h-100 col-md-2 col-3 paddingZero'>
-                                <img src={instagram} alt={'instagram'} className='imgSelf z-1  pointer'/>
+                            <div className='     h-100 col-md-2 col-3 paddingZero'>
+                                <a href="#"><img src={instagram} alt={'instagram'} className='imgSelf z-1  pointer'/></a>
                             </div>
                         </div>
                         <div className='col-8 d-flex justify-content-center  vh-5 align-items-end'>
                             <div className='col-md-4 col-6 d-flex align-items-end fontSizeHeader justify-content-center'>
                                 <div className='   justify-content-center h-100 col-4  pointer ml-4'>
-                                    ContactUs
+                                    <a className='alink' href="#twelve">ContactUs</a>
                                 </div>
                                 <div className='   justify-content-center h-100 col-4 pointer ml-4'>
-                                    KickStarter
+                                    <a className='alink' href="#">KickStarter</a>
                                 </div>
                                 <div className='   justify-content-center h-100 col-4 pointer'>
-                                    Media
+                                    <a className='alink' href="#nine">Media</a>
                                 </div>
                                 <div className='   justify-content-center h-100 col-4 pointer'>
-                                    Home
+                                    <a className='alink' href="#first">Home</a>
                                 </div>
                             </div>
 
                         </div>
                         <div className='col-2 d-flex   vh-7   justify-content-center'>
                             <div className='   justify-content-start h-75 col-md-2 col-3 paddingZero  alineTicket  mt-2  ml-5'>
-                                <img src={TICKET} alt={'TICKET'} className='imgSelf  z-1  pointer d-flex '/>
+                                <a className=' ' href="#"><img src={TICKET} alt={'TICKET'} className='imgSelf  z-1  pointer d-flex '/></a>
                             </div>
                             <div className='   justify-content-start h-100 col-md-3 col-4 paddingZero '>
-                                <img src={handmade_logo} alt={'handmade_logo'} className='imgSelf z-1  pointer'/>
+                                <a className=' ' href="#"> <img src={handmade_logo} alt={'handmade_logo'} className='imgSelf z-1  pointer'/></a>
                             </div>
                         </div>
-                        <div className='text-center FontSize1vw'>
 
-                        </div>
-                        {/*<div className=''>*/}
+                        {/*<div className='align-items-center'>*/}
                             {/**/}
                         {/*</div>*/}
 
-                    </div>
+                    </header>
                 </div>
                 <div className='w-100 vh-90'>
                     {
@@ -147,13 +146,13 @@ gyroscope; picture-in-picture" allowFullScreen></iframe>
                                             <Link name="first" activeClass="active" className="first" to="third" spy={true} smooth={true} duration={500}>
                                             <img src={textbox_bg} alt={'textbox_bg'} className='imgSelf z-1  pointer'/>
                                             <div className='d-flex align-items-center justify-content-center'>
-                                                <div className='firstTextOver pointer'>
+                                                <h1 className='firstTextOver pointer'>
                                                     FIGHT TO HEAVEN
                                                     <br/>
                                                     OR STAY IN HEELL
                                                     <br/>
                                                     “THE FRIEND”
-                                                </div>
+                                                </h1>
                                             </div>
                                             </Link>
                                         </div>
@@ -161,10 +160,9 @@ gyroscope; picture-in-picture" allowFullScreen></iframe>
                                 </div>
 
                                 <div className=' d-flex  align-items-center vh-10  flex-column ml10 '>
-                                    <div className=' h-100 d-flex justify-content-start align-items-center w-100 ' onClick={this.playVideo.bind(this)}>
+                                    <div className=' h-100 d-flex justify-content-start align-items-center w-100 pointer' onClick={this.playVideo.bind(this)}>
                                         <div className='col-2 h-100 paddingZero'>
-                                            <img src={play_trailer_icon} alt={'play_trailer_icon'} className='imgSelf z-1  '/>
-
+                                            <a className=' ' href="#"> <img src={play_trailer_icon} alt={'play_trailer_icon'} className='imgSelf z-1  '/></a>
                                         </div>
                                         <div className='col-10 h-100 paddingZero'>
                                                    <span className='imgSelf z-1  FontSize1vw d-flex justify-content-start align-items-center'>
@@ -172,9 +170,10 @@ gyroscope; picture-in-picture" allowFullScreen></iframe>
                                                     </span>
                                         </div>
                                     </div>
-                                    <div className=' vh-10 d-flex justify-content-start align-items-center w-100 mt-2'>
+                                    <div className=' vh-10 d-flex justify-content-start align-items-center w-100 mt-2 pointer'>
+
                                         <div className='col-2 h-100 paddingZero'>
-                                            <img src={kikStarter} alt={'kikStarter'} className='imgSelf z-1 '/>
+                                            <a className=' ' href="#"> <img src={kikStarter} alt={'kikStarter'} className='imgSelf z-1 '/></a>
                                         </div>
                                         <div className='col-10 h-100 paddingZero'>
                                             <span className='imgSelf z-1   FontSize1vw d-flex justify-content-start align-items-center'>
@@ -197,7 +196,7 @@ gyroscope; picture-in-picture" allowFullScreen></iframe>
 {/*<div className='flex-column'></div>*/}
 
 
-            </div>
+            </section>
                 </Parallax>
             </ParallaxProvider>
 

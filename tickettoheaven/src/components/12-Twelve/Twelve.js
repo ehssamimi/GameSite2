@@ -11,6 +11,8 @@ import BTN from "../../Common/img/12-footer-assets2/12-footer-assets2/bottom_to_
 import input from "../../Common/img/12-footer-assets2/12-footer-assets2/email input.png";
 // import handmade_logo from "../../Common/img/1-assets/SVG/handmade_logo.svg";
 import {animateScroll as scroll, Events, Link} from "react-scroll/modules";
+import ax from "../../Common/img/12-footer-assets2/12-footer-assets2/OS.png";
+import { FaCopyright } from "react-icons/fa";
 
 class Twelve extends Component {
     constructor(props) {
@@ -37,7 +39,7 @@ class Twelve extends Component {
     }
     render() {
         return (
-            <div className='w-100 vh-45 position-relative  ' id='twelve'>
+            <section className='w-100 vh-45 position-relative  ' id='twelve'>
                 <img src={background} alt={'firstPageBg'} className='imgSelf z-1'/>
 
 
@@ -62,9 +64,11 @@ class Twelve extends Component {
                                 </div>
                             </div>
                             <div className='col-8 d-flex h-100'>
-                                <div className='w-100 h-100 justify-content-center mt-3' dir='ltr'>
-                                    <span className='FontSize25vw d-block'>DON'T MISS OUT!</span>
-                                    <span className='FontSize2vw d-block'>FOLLOW US ON SOCIAL MEDIA AND KEEP UPDATE</span>
+                                <div className='w-100 h-100 justify-content-center  ' dir='ltr'>
+                                    {/*<span className='FontSize25vw d-block'>DON'T MISS OUT!</span>*/}
+                                    {/*<span className='FontSize2vw d-block'>FOLLOW US ON SOCIAL MEDIA AND KEEP UPDATE</span>*/}
+                                    <h3 className='FontSize25vw d-block'>DON'T MISS OUT!</h3>
+                                    <h2 className='FontSize2vw d-block'>FOLLOW US ON SOCIAL MEDIA AND KEEP UPDATE</h2>
                                 </div>
                             </div>
                         </div>
@@ -78,7 +82,7 @@ class Twelve extends Component {
                             </div>
                         </div>
                         <div className='w-100 vh-7 text-white z-3   d-flex justify-content-end '>
-                            <div className='col-2 ml-auto '>
+                            <div className='col-md-2 col-1 ml-auto '>
                                 <Link name="first" activeClass="active" className="first" to="first" spy={true} smooth={true} duration={900}>
                                 <img src={BTN} alt={'BTN'} className='imgSelf z-1  pointer'/>
                                 </Link>
@@ -87,42 +91,47 @@ class Twelve extends Component {
                             <div className='col-5 text-white d-flex '>
                                 <div className='col-6'>
                                     <ul>
-                                        <li className='liNone'>FAQ</li>
-                                        <li className='liNone'>CONTACT US</li>
-                                        <li className='liNone'>WATCH</li>
+                                        <a className="alink text-white" href="#"><li className='liNone'>FAQ</li></a>
+                                        <a className="alink text-white" href="#"><li className='liNone'>CONTACT US</li></a>
+                                        <a className="alink text-white" href="#"><li className='liNone'>WATCH</li></a>
+
                                     </ul>
                                 </div>
                                 <div className='col-6'>
                                     <ul>
-                                        <li className='liNone'>TERM OF SERVICES</li>
-                                        <li className='liNone'>PRIVACY POLICY</li>
-                                        <li className='liNone'>HELP</li>
+                                        <a className="alink text-white" href="#"><li className='liNone'>TERM OF SERVICES</li></a>
+                                        <a className="alink text-white" href="#"><li className='liNone'>PRIVACY POLICY</li></a>
+                                        <a className="alink text-white" href="#"><li className='liNone'>HELP</li></a>
+
                                     </ul>
                                 </div>
 
                             </div>
 
                         </div>
+                        <hr className='bg-white w-75 mt-5 mb-2' ></hr>
+                        <div className='w-100 vh-7 text-white z-3   d-flex justify-content-end pointer '>
 
-                    </div>
-                    <hr className='colorGreen z-6'/>
-                    {/*<div className='text-white col-12'>*/}
-                        {/*/!*aaaaa asfasgf aadgag*!/*/}
-                    {/*</div>*/}
+                            <div className='col-2 h-50 ml-auto mt-3'>
+                                <img src={ax}  className='imgSelf'/>
+                            </div>
+                            <div className='col-6 d-flex justify-content-end align-items-center'>
+                                <span className=' ml-2 '> 2019,HANDMADE INTERACTIVE LLIC ALL RIGHTS RESERVED </span>
+
+                                <span className=' d-flex   align-items-center pt-1'><FaCopyright/></span>
+
+                            </div>
+
+                        </div>
 
 
 
+                        </div>
 
-                    {/*<div className='    h-35 col-4 '>*/}
-                        {/*<img src={RedBox} alt={'RedBox'} className='imgSelf  z-1  pointer'/>*/}
-                        {/*<pre className='fontFamiliyBarbaDos  divOverP4 FontSize2vw text-white z-4 '>*/}
-                            {/*{`      KEEP YOUR EYE ON HEALTH BOXES*/}
-    {/*EVEN THE MIGHIEST WARRIORS NEED*/}
-{/*THIER STREGHT TO CONTINUE FIGHTING!`}</pre>*/}
-                    {/*</div>*/}
+
                 </div>
 
-            </div>
+            </section>
 
         );
     }

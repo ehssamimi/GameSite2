@@ -34,7 +34,7 @@ class SecondPage extends Component {
     }
     render() {
         return (
-            <div className='w-100 vh-45 position-relative' id='second'>
+            <section className='w-100 vh-45 position-relative '  id='second'>
                 {/*<img src={background} alt={'firstPageBg'} className='imgSelf z-1'/>*/}
                 <div className='box2-3  d-flex justify-content-center flex-column'>
                     {/*<div className='       h-100 col-12   paddingZero' >*/}
@@ -50,13 +50,13 @@ class SecondPage extends Component {
                             <div className='d-flex flex-column  w-100  '>
                                 <div className='       w-100 h-100 '>
                                     <img src={greentext} alt={'greentext'} className='imgSelf-cover z-1 '/>
-                                    <div className='pl-3 pr-3 text-justify h-100 w-100 divOverP4'>
+                                    <h2 className='pl-3 pr-3 text-justify h-100 w-100 divOverP4'>
  <pre className='fontFamiliyBarbaDos text-white w-100'>{` OUR KICKSTARTER CAMPAIN WILL BE KICKING OFF SOON!
 BACK US AND GET MOST OUT OF TICKET TO HEAVEN EXCLUSIVE ITEMS
  INCLUDE:ARTBOOK, POSTER AND PRINTS PLUS IN-GAME ITEMS `}</pre>
-                                    </div>
+                                    </h2>
                                     <div>
-                                        <span className='pl-3 colorGreen FontSize25vw '>YOU DON'T WANT TO MISS THE FRIENDS STATUS</span>
+                                        <h3 className='pl-4 colorGreen FontSize25vw '>YOU DON'T WANT TO MISS THE FRIENDS STATUS</h3>
                                     </div>
                                 </div>
                             </div>
@@ -66,12 +66,12 @@ BACK US AND GET MOST OUT OF TICKET TO HEAVEN EXCLUSIVE ITEMS
                         <div className='d-flex w-100 h-100'>
                             <div className='d-flex justify-content-start col-6 vh-7 '>
                                 <img src={graybtn} alt={'graybtn'} className='imgSelf-cover z-1 pointer'/>
-                                <pre className='fontFamiliyBarbaDos  divOverP2 FontSize2vw text-white z-2 '>{` BACK US ON KICKSTARTER!`}</pre>
+                                <h4 className='fontFamiliyBarbaDos  divOverP2 FontSize2vw text-white z-2 '>{` BACK US ON KICKSTARTER!`}</h4>
                             </div>
                             <div className='  d-flex justify-content-start col-6 vh-7'>
                                 <img src={greenBtn} alt={'greenBtn'} className='imgSelf-cover z-1  pointer'/>
                                 <Link name="second" activeClass="active" className="second" to="third" spy={true} smooth={true} duration={500}>
-                                    <pre className='fontFamiliyBarbaDos  divOverP2 FontSize2vw text-white z-2 '>{` LET'S MEET THE FRIENDS!`}</pre>
+                                    <h4 className='fontFamiliyBarbaDos  divOverP2 FontSize2vw text-white z-2 '>{` LET'S MEET THE FRIENDS!`}</h4>
                                 </Link>
                             </div>
 
@@ -128,7 +128,7 @@ BACK US AND GET MOST OUT OF TICKET TO HEAVEN EXCLUSIVE ITEMS
                 {/*</div>*/}
 
 
-            </div>
+            </section>
         );
     }
 }
