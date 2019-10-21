@@ -26,7 +26,7 @@ HEAD TO ARENA!`}</pre>
                     <div className='  h-35 col-6 ml7'>
                         <img src={RedBox} alt={'RedBox'} className='imgSelf  z-1  pointer'/>
                         <Link name="seven7" activeClass="seven7" className="seven7" to="nine" spy={true} smooth={true}
-                              duration={500}>
+                              duration={500}  offset={15}>
                                 {/*<span className='divOverP7-2  z-2  text-white'>*/}
                             {/*lET'S FLY BATTLEFIELD!*/}
                         {/*</span>*/}

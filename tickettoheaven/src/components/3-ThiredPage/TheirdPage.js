@@ -42,7 +42,7 @@ class TheirdPage extends Component {
 
                 </div>
                     <div className='  d-flex justify-content-start w-75 position-relative pointer '>
-                        <Link name="third" activeClass="third" className="third w-100 h-100" to="fifth" spy={true} smooth={true} duration={500}>
+                        <Link name="third" activeClass="third" className="third w-100 h-100" to="fifth" spy={true} smooth={true} duration={500}  offset={15}>
 
                         <img src={black} alt={'black'} className='imgSelf-cover z-1  '/>
                             {/*<pre className='fontFamiliyBarbaDos  divOverP3-2 FontSize2vw text-white z-4 textRotationHeader '>{`TAKE ME TO BAR FRIEND `}</pre>*/}

@@ -19,7 +19,7 @@ class FirstPage extends Component {
         this.state={
             playVideo:false
         };
-        this.scrollToTop = this.scrollToTop.bind(this);
+        // this.scrollToTop = this.scrollToTop.bind(this);
 
     }
 
@@ -37,41 +37,41 @@ class FirstPage extends Component {
         });
 
     }
-    scrollToTop() {
-        scroll.scrollToTop();
-    }
-    scrollTo() {
-        scroller.scrollTo('scroll-to-element', {
-            duration: 800,
-            delay: 0,
-            smooth: 'easeInOutQuart'
-        })
-    }
-    scrollToWithContainer() {
-
-        let goToContainer = new Promise((resolve, reject) => {
-
-            Events.scrollEvent.register('end', () => {
-                resolve();
-                Events.scrollEvent.remove('end');
-            });
-
-            scroller.scrollTo('scroll-container', {
-                duration: 800,
-                delay: 0,
-                smooth: 'easeInOutQuart'
-            });
-
-        });
-
-        goToContainer.then(() =>
-            scroller.scrollTo('scroll-container-second-element', {
-                duration: 800,
-                delay: 0,
-                smooth: 'easeInOutQuart',
-                containerId: 'scroll-container'
-            }));
-    }
+    // scrollToTop() {
+    //     scroll.scrollToTop();
+    // }
+    // scrollTo() {
+    //     scroller.scrollTo('scroll-to-element', {
+    //         duration: 800,
+    //         delay: 0,
+    //         smooth: 'easeInOutQuart'
+    //     })
+    // }
+    // scrollToWithContainer() {
+    //
+    //     let goToContainer = new Promise((resolve, reject) => {
+    //
+    //         Events.scrollEvent.register('end', () => {
+    //             resolve();
+    //             Events.scrollEvent.remove('end');
+    //         });
+    //
+    //         scroller.scrollTo('scroll-container', {
+    //             duration: 800,
+    //             delay: 0,
+    //             smooth: 'easeInOutQuart'
+    //         });
+    //
+    //     });
+    //
+    //     goToContainer.then(() =>
+    //         scroller.scrollTo('scroll-container-second-element', {
+    //             duration: 800,
+    //             delay: 0,
+    //             smooth: 'easeInOutQuart',
+    //             containerId: 'scroll-container'
+    //         }));
+    // }
     componentWillUnmount() {
         Events.scrollEvent.remove('begin');
         Events.scrollEvent.remove('end');
@@ -143,7 +143,7 @@ gyroscope; picture-in-picture" allowFullScreen></iframe>
                                 <div className=' d-flex justify-content-center align-items-center vh-35 w-100 '>
                                     <div className='w-100 h-100 d-flex justify-content-center align-items-center position-relative'>
                                         <div className=' justify-content-start h-100 col-3 paddingZero'>
-                                            <Link name="first" activeClass="active" className="first" to="third" spy={true} smooth={true} duration={500}>
+                                            <Link name="first" activeClass="active" className="first" to="third" spy={true} smooth={true} duration={500} offset={20}>
                                             <img src={textbox_bg} alt={'textbox_bg'} className='imgSelf z-1  pointer'/>
                                             <div className='d-flex align-items-center justify-content-center'>
                                                 <h1 className='firstTextOver pointer'>
