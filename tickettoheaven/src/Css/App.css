@@ -305,12 +305,25 @@ border-radius: 20%;
     text-decoration: none;
 
 }
+.alink2{
+    color: black;
+    text-decoration: none;
+
+}
 .alink:hover{
     padding-bottom: 3px;
     color: black;
     text-decoration: none;
     border-bottom:2px solid black ;
     transition: 0.2s;
+    /*font-weight: 600;*/
+}
+.alink2:hover{
+    padding-bottom: 3px;
+    color: #604e2b;
+    text-decoration: none;
+    /*border-bottom:2px solid black ;*/
+    /*transition: 0.2s;*/
     /*font-weight: 600;*/
 }
 .liNone{
@@ -790,6 +803,22 @@ margin-right: auto;
     height:50vh;
     background-image: url('./../Common/img/Backgrounds/Backgrounds/9-bg.jpg');
     background-size: 100% 100%;
+}
+
+#SecretPage{
+    width: 100%;
+    height:100vh;
+    background-image: url('./../Common/img/Backgrounds/Backgrounds/4-bg.jpg');
+    background-size: 100% 100%;
+    /*z-index: 999999!important;*/
+}
+.wrongTxt{
+  font-size: 1.3vw;
+    color: darkred;
+}
+.EmptyTxt{
+    font-size: 1.3vw;
+    color: #86cfda;
 }
 /*#eleven{*/
     /*width: 100%;*/

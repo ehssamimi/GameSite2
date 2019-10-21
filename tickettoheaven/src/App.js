@@ -17,6 +17,9 @@ const MainRoute = React.lazy(() =>
 const TicketToHeaven = React.lazy(() =>
     import(/* webpackChunkName: "views-error" */ './components/Main/MainComponent/MainComponent')
 );
+const SecretPage = React.lazy(() =>
+    import(/* webpackChunkName: "views-error" */ './components/Main/SecretPage')
+);
 
 function App() {
   return (
@@ -29,10 +32,10 @@ function App() {
                         {/*authUser={loginUser}*/}
                         {/*component={ViewApp}*/}
                     {/*/>*/}
-                    {/*<Route*/}
-                        {/*path="/user"*/}
-                        {/*render={props => <ViewUser {...props} />}*/}
-                    {/*/>*/}
+                    <Route
+                        path="/publisher-section"
+                        render={props => <SecretPage {...props} />}
+                    />
                     <Route
                         path="/error"
                         exact

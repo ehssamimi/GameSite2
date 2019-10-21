@@ -34,17 +34,17 @@ class Slider1 extends Component {
 
 
                 <div className='slider1   justify-content-center   '>
-                    <Link name="slider1" activeClass="slider1" className="slider1" to="eleven" spy={true} smooth={true} duration={500}>
+                    {/*<Link name="slider1" activeClass="slider1" className="slider1" to="eleven" spy={true} smooth={true} duration={500}>*/}
 
-                    <div className='  col-md-5 col-7 offset-3   d-flex align-items-end position-relative pointer'>
+                    <div className='  col-md-5 col-7 offset-3   d-flex align-items-end position-relative  '>
 
-                        <img src={gray} alt={'gray'} className='imgSelf-cover  z-1  pointer '/>
+                        <img src={gray} alt={'gray'} className='imgSelf-cover  z-1    '/>
 
                         <pre className='fontFamiliyBarbaDos  divOverSlider1  text-white z-2 '>
-                        {`WELCOME TO ARENA, YOUR TICKET TO HEAVEN`}</pre>
+                        {`WELCOME TO ARENA, YOUR TICKET TO HEAVEN `}</pre>
 
                     </div>
-            </Link>
+            {/*</Link>*/}
                 </div>
             </div>
         );
