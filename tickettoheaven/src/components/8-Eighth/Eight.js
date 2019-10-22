@@ -38,7 +38,7 @@ class Eight extends Component {
                     <div className=' h-35 col-7 col-md-4 position-relative '>
                         <img src={RedBox} alt={'RedBox'} className='imgSelf  z-1  pointer'/>
                         <pre className='fontFamiliyBarbaDos  textSplit  text-white z-4 '>
-                            {`      AWAYS LOOK OUT FOR GUN textSplit
+                            {`      AWAYS LOOK OUT FOR GUNS
     WHILE THEY ARE DROPPING OFF PICK
    THEM UP BEFORE YOUR OPPONENT DO!`}</pre>
                     </div>

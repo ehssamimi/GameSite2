@@ -42,7 +42,7 @@ PREPARE YOUR SELF TO WIN THE TICKET TO HEAVEN!`}</pre>
                         </h3>
                     </div>
                 </div>
-                <span className='buttonTab pb-1 text-white FontSize13vw'>BACK US KICKSTARTER AND EARN EXCLUSIVE IN GAME AND PHYSICAL REWARDS!</span>
+                <span className='buttonTab  w-100'> <span className='   offset-4 pb-1   FontSize13vw'> US KICKSTARTER AND EARN EXCLUSIVE IN GAME AND PHYSICAL REWARDS!</span></span>
             </section>
         );
     }

@@ -81,10 +81,14 @@ class SecretPage extends Component {
                         <Card>
                             <CardBody>
                                 <div className='w-100 d-flex flex-column justify-content-center align-items-center ' >
+                                    <a href="http://thehandmade.io/Publishers_Section/Ticket_To_Heaven_Pitch_Document_and_Demo.rar" className='alink2 vh-5'>Pitch Document And Demos (Recommended)</a>
                                     <a href="http://thehandmade.io/Publishers_Section/Builds/Android/TicketToHeaven.apk" className='alink2 vh-5' >Android Version (Game Build)</a>
                                     <a href="http://thehandmade.io/Publishers_Section/Builds/PC/TicketToHeaven.rar" className='alink2 vh-5'>PC Version (Game Build)</a>
                                     <a href="http://thehandmade.io/Publishers_Section/Presentations/TTHGameCataloguePP.ppsx" className='alink2 vh-5'>Full Presentation (Document)</a>
                                     <a href="http://thehandmade.io/Publishers_Section/Presentations/TTHGameShortBrief.pdf" className='alink2 vh-5' >Quick Overview (Document)</a>
+                                    <div className='h-5 d-flex justify-content-start align-items-start w-100'>
+                                       <span className='h-100 FontSize05vw'>Last Updated: 2019/10/22</span>
+                                    </div>
                                 </div>
                             </CardBody>
                         </Card>

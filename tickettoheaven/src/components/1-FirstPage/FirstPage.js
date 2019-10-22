@@ -94,7 +94,7 @@ class FirstPage extends Component {
                                 <a href="#"><img src={facebook} alt={'facebook'} className='imgSelf z-1  pointer'/></a>
                             </div>
                             <div className='     h-100 col-md-2 col-3 paddingZero'>
-                                <a href="#"><img src={instagram} alt={'instagram'} className='imgSelf z-1  pointer'/></a>
+                                <a href="https://www.instagram.com/thehandmade.io/"><img src={instagram} alt={'instagram'} className='imgSelf z-1  pointer'/></a>
                             </div>
                         </div>
                         <div className='col-8 d-flex justify-content-center  vh-5 align-items-end'>
