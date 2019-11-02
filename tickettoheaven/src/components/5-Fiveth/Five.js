@@ -33,7 +33,7 @@ class Five extends Component {
             <ParallaxProvider>
                 <Parallax className="custom-class" y={[-15, 15]} tagOuter="figure">
 
-            <section className='w-100 vh-100 position-relative z-1' id='fifth'>
+            <section className='w-100   position-relative z-1' id='fifth'>
                 {/*<img src={background} alt={'firstPageBg'} className='imgSelf z-1'/>*/}
 
 

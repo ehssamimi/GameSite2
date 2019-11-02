@@ -34,7 +34,7 @@ class SecondPage extends Component {
     }
     render() {
         return (
-            <section className='w-100 vh-45 position-relative '  id='second'>
+            <section className='w-100  position-relative '  id='second'>
                 {/*<img src={background} alt={'firstPageBg'} className='imgSelf z-1'/>*/}
                 <div className='box2-3  d-flex justify-content-center flex-column'>
                     {/*<div className='       h-100 col-12   paddingZero' >*/}

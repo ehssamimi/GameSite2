@@ -80,7 +80,7 @@ class FirstPage extends Component {
         return (
             <ParallaxProvider>
                 <Parallax className="custom-class" y={[-20, 20]} tagOuter="figure">
-            <section className='w-100 vh-100' id='first'>
+            <section className='w-100 ' id='first'>
                 {/*<img src={background} alt={'firstPageBg'} className='imgSelf z-1'/>*/}
                 <div className='' dir='rtl'>
                     <header className='z-2  divOver vh-10 d-flex align-items-center pt-2 '>
